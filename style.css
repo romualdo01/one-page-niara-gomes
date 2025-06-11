@@ -1,0 +1,488 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5px;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(to right, #ffe0ec, #fff);
+  padding: 0 20px 20px;
+  text-align: center;
+}
+
+/* Novo layout flexível para o banner do header com foto ao lado */
+.header-banner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+/* Texto e ícones alinhados na esquerda */
+.texto-servicos-container {
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza filhos horizontalmente */
+  gap: 15px; /* espaço entre texto e serviços */
+  max-width: 600px;
+  margin: 0 auto; /* centraliza container */
+}
+
+.texto-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; /* muito próximo */
+  padding: 0;
+  margin-top: 50px;
+}
+
+.texto-header h1 {
+  font-size: 2.5rem;
+  color: #c06c84;
+  margin-top: 0;
+}
+
+.texto-header p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.servicos-icones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.icone-servico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #c06c84;
+  transition: transform 0.3s, color 0.3s;
+  cursor: default;
+  width: 80px;
+   margin-right: 15px;
+}
+
+.icone-servico span {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: #555;
+  text-align: center;
+}
+
+.icone-servico:hover {
+  transform: scale(1.15);
+  color: #8c3e5b;
+}
+
+/* Imagem da doutora ao lado direito com sombra */
+.foto-doutora img {
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(192, 108, 132, 0.5);
+  width: 350px;      /* tamanho natural da imagem */
+  height: auto;
+  max-width: 100%;  /* para não estourar o container */
+  margin-top: 20px;
+}
+
+/* Outros estilos que você já tinha */
+
+.logo-img {
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+.imagem-header {
+  height: 200px;
+  background: url('img/header.jpg') center/cover no-repeat;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* SEÇÕES */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #c06c84;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* SERVIÇOS */
+.servicos-lista {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+   padding-left: 20px;   /* espaço à esquerda */
+  padding-right: 20px;  /* espaço à direita */
+}
+
+.servico {
+  width: 250px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s;
+  background: #fafafa;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.servico:hover {
+  transform: scale(1.05);
+}
+
+.servico img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.servico p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #c06c84;
+}
+
+/* BOTÃO WHATSAPP */
+button {
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1ebe57;
+}
+
+/* REDES SOCIAIS */
+#redes-sociais-final {
+  background: linear-gradient(to right, #ffe0ec, #fff); /* igual ao header */
+  padding: 50px 20px;
+  text-align: center;
+  width: 100%;           /* garante ocupar toda a largura */
+  box-sizing: border-box; /* garante que o padding não aumente a largura */
+}
+
+.redes-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-footer img {
+  height: 60px;
+}
+
+.logo-footer h2 {
+  font-size: 2rem;
+  color: #c06c84;
+  margin: 0;
+}
+
+.logo-footer p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.frase-footer {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.endereco-footer {
+  font-size: 0.95rem;
+  color: #555;
+  max-width: 800px;
+}
+
+.endereco-footer a {
+  color: #c06c84;
+  text-decoration: underline;
+}
+
+.icones-redes {
+  display: flex;
+  gap: 20px;
+  font-size: 2rem;
+}
+
+.icones-redes a {
+  color: #c06c84;
+  transition: color 0.3s;
+}
+
+.icones-redes a:hover {
+  color: #8c3e5b;
+}
+
+/* FOOTER */
+footer {
+  background: #f8f8f8;
+  text-align: center;
+}
+  .icone-servico {
+    font-size: 1.5rem;
+    width: 60px;
+  }
+
+  .icone-servico span {
+    font-size: 0.75rem;
+  }
+
+/* Estilo do botão fixo */
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 1.5rem;
+  padding: 12px 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  animation: pulse 2.5s infinite;
+  transition: background-color 0.3s;
+   box-shadow: 0 0 10px 2px rgba(37, 211, 102, 0.6); /* glow inicial */
+}
+
+/* Ícone */
+.whatsapp-fixo i {
+  font-size: 2rem;
+}
+
+/* Hover */
+.whatsapp-fixo:hover {
+  background-color: #1ebe57;
+}
+
+/* Animação pulse */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px 2px rgba(37, 211, 102, 0.6);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 10px rgba(37, 211, 102, 0.9);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px 2px rgba(37, 211, 102, 0.6);
+  }
+}
+
+.feedback-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+  flex-wrap: nowrap;
+   padding-left: 70px;
+  padding-right: 70px;
+  box-sizing: border-box;
+}
+
+.feedback-item.inverso {
+  flex-direction: row-reverse;
+}
+.feedback-imagem {
+  transition: transform 0.3s ease;
+}
+
+.feedback-imagem:hover {
+  transform: scale(1.05);
+}
+
+.feedback-imagem img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.feedback-imagem img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.feedback-texto {
+  max-width: 400px;
+}
+
+.feedback-texto h3 {
+  color: #c06c84;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.feedback-texto p {
+  color: #555;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .feedback-item,
+  .feedback-item.inverso {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feedback-imagem img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .feedback-texto {
+      max-width: 400px;
+  color: #333;
+  text-align: left;
+  }
+}
+.feedback-card {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.163);
+  text-align: center;
+  transition: transform 0.3s ease;
+   width: 300px;
+  flex-shrink: 0;
+}
+
+.feedback-card:hover {
+  transform: scale(1.05);
+}
+
+.feedback-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.feedback-card p {
+  font-weight: bold;
+  color: #c06c84;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .feedback-item {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .feedback-texto {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .feedback-card {
+    width: 100%;
+  }
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+.texto-contato {
+  margin-top: -20px; /* ou -15px se quiser mais colado */
+}
+@media (max-width: 768px) {
+  .servicos-lista {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* opcional: anima de baixo pra cima */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+@media (max-width: 768px) {
+  .feedback-item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .whatsapp-fixo {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+}
