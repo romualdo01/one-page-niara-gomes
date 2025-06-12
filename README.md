@@ -1,5 +1,6 @@
 🌿 Niara Gomes | Nutrição e Estética Avançada
 Este é um site institucional desenvolvido para a profissional Niara Gomes, especializada em nutrição funcional e estética avançada, com atuação na cidade de Touros/RN. O objetivo do projeto é apresentar seus serviços, gerar conexão com potenciais clientes e facilitar o contato direto via WhatsApp.
+
 ![image](https://github.com/user-attachments/assets/009a3c3c-1d39-4020-998f-281e677c491d)
 
 🖥️ Tecnologias Utilizadas
