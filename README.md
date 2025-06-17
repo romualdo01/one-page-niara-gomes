@@ -42,7 +42,7 @@ SEO básico com título, descrição e imagens otimizadas
 Layout 100% responsivo com grid flexível
 
 🔗 Acesso ao Site
-👉 Visualizar site online (GitHub Pages)
+👉[](https://romualdo01.github.io/Niara-Gomes/)
 
 📍 Localização da clínica
 Av. Avelino André de Souza, 530 - Loja 4 - Centro, Touros - RN
